@@ -63,7 +63,7 @@ rommeltje. Zorg daarom dat je onderstaande checklist afwerkt.
 
 ## Opdracht 2: routing
 De Reddit applicatie heeft op dit moment nog geen pagina's en ook geen routing. Dit ga jij zelf implementeren. Maak twee pagina-componenten aan en zorg ervoor dat deze pagina's te bereiken zijn op de volgende urls:
-* Home pagina (`/`)
+* HomePage pagina (`/`)
 * Subreddit specifieke pagina (`/subreddit/:subredditId`, dynamische url)
 
 Zorg dat je test of jouw dynamische routing werkt, door op de Subreddit specifieke pagina de `subredditId` uit te lezen en weer te geven op de pagina. Dit kun je vervolgens testen door handmatig urls in de adresbalk te typen, zoals: `http://localhost:3000/subreddit/todayilearned`.
@@ -107,8 +107,8 @@ src
 └── assets
 |
 └── helpers
-|    ├── helperFunctieNaam.js
-|    └── helperFunctieNaamAndere.js
+|    ├── formatDotNotation.js
+|    └── formatEllipsis.js
 └── components
 |    └── button
 |        ├── Button.js
@@ -118,8 +118,8 @@ src
 |        └── Header.css
 └── pages
 |   └── home
-|       ├── Home.js
-|       └── Home.css
+|       ├── HomePage.js
+|       └── HomePage.css
 |   └── subreddit
 |       ├── Subreddit.js
 |       └── Subreddit.css

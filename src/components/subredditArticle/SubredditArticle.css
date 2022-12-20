@@ -1,0 +1,19 @@
+.subreddit-article {
+    border-radius: 4px;
+    box-shadow: 4px 8px 16px 0 rgba(0, 0, 0, 0.1);
+    background-color: var(--white);
+    flex-basis: 380px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 20px;
+}
+
+.subreddit-article-title-link,
+.subreddit-article-title-link:link,
+.subreddit-article-title-link:visited {
+    color: var(--black);
+    text-decoration: none;
+}
