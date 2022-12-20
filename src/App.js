@@ -1,25 +1,30 @@
-import logo from './logo.svg';
+import React from "react";
 import './App.css';
+import {Routes, Route} from "react-router-dom";
+import HomePage from "./pages/home/HomePage"
+import Subreddit from "./pages/subreddit/Subreddit"
+import PageNotFound from "./pages/page-not-found/PageNotFound";
+import Footer from "./components/footer/Footer";
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <>
+            <Routes>
+                <Route path="/" element={<HomePage />}></Route>
+                <Route path="/subreddit/:id" element={<Subreddit />}></Route>
+                <Route path="/*" element={<PageNotFound/>}/>
+            </Routes>
+
+
+            <Footer company="In opdracht van Rick van den Brink" year="2022"/>
+            {/*<footer className="outer-content-container">*/}
+            {/*    <div className="inner-content-container">*/}
+            {/*        In opdracht van Rick van den Brink © 2022*/}
+            {/*    </div>*/}
+            {/*</footer>*/}
+        </>
+    );
 }
 
 export default App;
